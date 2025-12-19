@@ -1,0 +1,33 @@
+﻿<Window x:Class="AboutDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="About" Icon="about.ico" Height="480" Width="640" ResizeMode="NoResize" WindowStartupLocation="CenterOwner" ShowInTaskbar="False" Name="AboutDialog">
+    <Grid Background="#7BFFFFFF">
+        <Button HorizontalAlignment="Right" Margin="0,0,12,11.52" Name="OKButton" Width="75" Height="23" VerticalAlignment="Bottom" ForceCursor="False" IsDefault="True">
+            _OK
+        </Button>
+        <Label Height="44" Margin="66,0,0,0" Name="AppNameLabel" VerticalAlignment="Top" FontSize="28
+               " HorizontalContentAlignment="Center" HorizontalAlignment="Left" Width="229">
+            <Label.Effect>
+                <DropShadowEffect ShadowDepth="0" Color="White" />
+            </Label.Effect>    
+            Document.Viewer
+        </Label>
+        <Label Name="CopyLabel" Margin="12,0,298,10" VerticalAlignment="Bottom" BorderBrush="Black" HorizontalContentAlignment="Left">
+            <Label.Effect>
+                <DropShadowEffect ShadowDepth="0" Color="White" />
+            </Label.Effect>
+            Copyright
+        </Label>
+        <Label Height="33" Margin="0,10.58,13,0" Name="VersionLabel" VerticalAlignment="Top" FontSize="18" HorizontalContentAlignment="Center" HorizontalAlignment="Right" Width="186">
+            <Label.Effect>
+                <DropShadowEffect ShadowDepth="0" Color="White" />
+            </Label.Effect>
+            Label
+        </Label>
+            <Image Source="../Document.Viewer.ico" Name="Image1" Width="48" Height="48" HorizontalAlignment="Left" Margin="12,1,0,0" VerticalAlignment="Top" />
+        <TextBox Margin="13,50,13,42" Name="TextBox1" IsReadOnly="True" TextWrapping="WrapWithOverflow" VerticalScrollBarVisibility="Auto">
+            
+        </TextBox>
+    </Grid>
+</Window>
